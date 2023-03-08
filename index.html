@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Donate</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="column">
+                <div class="title">
+                    <h3>
+                        Help us do more
+                    </h3>
+                    <p>
+                        We'll get right to the point: we're asking you to support us. We're a nonprofit that relies on
+                        support from people like you. If everyone reading this gives $10 monthly, we can thrive for
+                        years.
+                    </p>
+                </div>
+            </div>
+            <div class="column">
+                <span>Select gift frequency</span>
+                <div class="payment-options">
+                    <button id="monthly-payment-btn" class="active" onclick="togglePaymentOption('monthly')">Monthly
+                    </button>
+                    <button id="one-time-payment-btn" onclick="togglePaymentOption('one-time')">One Time
+                    </button>
+                </div>
+                <span>Select amount (in US dollar)</span>
+                <div class="amount">
+                    <div class="button-group">
+                        <button class="button" id="button1" onclick="selectButton(1)">$10</button>
+                        <button class="button" id="button2" onclick="selectButton(2)">$20</button>
+                        <button class="button" id="button3" onclick="selectButton(3)">$30</button>
+                        <button class="button" id="button4" onclick="selectButton(4)">$40</button>
+                        <button class="button" id="button5" onclick="selectButton(5)">Other</button>
+                    </div>
+
+                </div>
+                <div class="transaction">
+                    <input type="checkbox" id="my-checkbox">
+                    <label for="my-checkbox">Yes, I'll generously add $0.75 each month to cover the transaction
+                        fees</label>
+                </div>
+                <div class="nameInput">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Enter your name">
+                    <a href="#">Click here to give in honour of another person</a>
+                    <button class="donate">Donate now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
